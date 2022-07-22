@@ -67,6 +67,7 @@ nav {
 
 table {
   width: 100%;
+  border-spacing: 0px;
 }
 
 tr:nth-child(2n) {
