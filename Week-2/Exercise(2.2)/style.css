@@ -21,6 +21,7 @@ div {
   width: 300px;
   height: 300px;
   cursor: pointer;
+  transition: transform 2s ease-in-out;
 }
 
 .first {
@@ -59,7 +60,7 @@ div {
   animation: rotation 1s ease-in-out;
 } */
 
-.first:hover {
+/* .first:hover {
   transform: rotate(-90deg) translateX(300px);
   transition-duration: 2s;
 }
@@ -77,4 +78,20 @@ div {
 .fourth:hover {
   transform: rotate(-90deg) translateX(-300px);
   transition-duration: 2s;
+} */
+
+.first:hover {
+  transform: rotate(90deg) translateY(300px);
+}
+
+.second:hover {
+  transform: rotate(-90deg) translateY(300px);
+}
+
+.third:hover {
+  transform: rotate(90deg) translateY(300px);
+}
+
+.fourth:hover {
+  transform: rotate(-90deg) translateY(300px);
 }
