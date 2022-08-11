@@ -6,10 +6,11 @@ const timer = (fn) => {
 };
 
 // Main Function
-const add = (a, b) => {
-  if (!!a && !!b) return a + b;
-  if (!!a) return a;
-  if (!!b) return b;
+const add = (...args) => {
+  // if (!!a && !!b) return a + b;
+  // if (!!a) return a;
+  // if (!!b) return b;
+  return args.reduce((prev, current) => prev + current, 0);
 };
 
 const memoize = (fn) => {
@@ -29,3 +30,4 @@ timer(() => memoizeSum(100, 100));
 timer(() => memoizeSum(100));
 timer(() => memoizeSum(100, 200));
 timer(() => memoizeSum(100, 100));
+timer(() => memoizeSum(100, 100, 100, 100));
