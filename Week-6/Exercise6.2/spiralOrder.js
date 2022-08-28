@@ -39,3 +39,8 @@ const spiralOrderMatrix = (array) => {
 
 console.log(spiralOrderMatrix([[1,2,3],[4,5,6],[7,8,9]]))
 console.log(spiralOrderMatrix([[1,2,3,4],[5,6,7,8],[9,10,11,12]]))
+
+/**
+ * Space Complexity - O(MN) (As we have new array with m*n elements)
+ * Time Complexity - O(MN) (As we are reaching each element once)
+ */

@@ -16,3 +16,8 @@ const bestTimeToBuy = (arr) => {
 
 console.log(bestTimeToBuy([7,1,5,3,6,4]))
 console.log(bestTimeToBuy([1,2,3]))
+
+/**
+ * Space Complexity - O(1) (As we didn't use any extra spaces which is dependent on N)
+ * Time Complexity - O(N) (As we are iterating once through the entire loop once)
+ */

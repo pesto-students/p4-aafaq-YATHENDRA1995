@@ -31,3 +31,8 @@ const threeSumClosest = (arr, val) => {
 
 console.log(threeSumClosest([-1,2,1,-4],1))
 console.log(threeSumClosest([-1,3,1,-4,1],1))
+
+/**
+ * Space Complexity - O(1) (As we didn't use any extra spaces which is dependent on N)
+ * Time Complexity - O(NlogN) (As we are using sorting once - nlogn and traversing once through array N)
+ */

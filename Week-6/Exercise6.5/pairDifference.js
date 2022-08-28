@@ -22,3 +22,8 @@ const givenDifferencePair = (arr, val) => {
 
 console.log(givenDifferencePair([5, 10, 3, 2, 50, 80], 78))
 console.log(givenDifferencePair([-10, 20], 30))
+
+/**
+ * Space Complexity - O(1) (As we didn't use any extra spaces which is dependent on N)
+ * Time Complexity - O(NlogN) (As we are using sorting once - nlogn and traversing once through array N)
+ */
