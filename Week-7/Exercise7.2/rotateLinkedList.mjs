@@ -29,5 +29,5 @@ list2.printList()
 
 /**
  * Space Complexity - O(1)
- * Time Complexity - O(N) (As we are traversing through entire array)
+ * Time Complexity - O(N) (As we are traversing through entire list)
  */
