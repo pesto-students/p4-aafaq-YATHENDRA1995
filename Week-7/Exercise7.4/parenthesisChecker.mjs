@@ -35,11 +35,6 @@ const parenthesisChecker = (str) => {
 
 }
 
-/*
-  Space Complexity - O(N)
-  Time Compltexity - O(N)
-*/
-
 console.log(parenthesisChecker('{}'))
 console.log(parenthesisChecker('{[()]}'))
 console.log(parenthesisChecker('{'))
@@ -47,3 +42,8 @@ console.log(parenthesisChecker('abv'))
 console.log(parenthesisChecker('{yathendra}'))
 console.log(parenthesisChecker('{]'))
 console.log(parenthesisChecker('{}[]'))
+
+/*
+  Space Complexity - O(N)
+  Time Compltexity - O(N)
+*/
