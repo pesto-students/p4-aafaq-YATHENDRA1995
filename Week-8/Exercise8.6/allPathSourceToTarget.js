@@ -72,6 +72,6 @@ console.log(allPathsFromSourceToTarget([
 ]))
 
 /**
- * Space Complexity - O(N) (As we are using queue and empty arrays)
- * Time Complexity - O(N) (As we are using one while lopp and traversing completely)
+ * Space Complexity - O(V * E) 
+ * Time Complexity - O(V * E)
  */

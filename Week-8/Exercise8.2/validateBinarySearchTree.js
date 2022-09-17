@@ -50,8 +50,8 @@ console.log(isBST(root1))
 console.log(isBST(root2))
 
 /**
- * Time Complexity - O(n) (As we are traversing through all nodes)
- * Space Complexity - O(n) (As n stacks get's created in worst case)
+ * Time Complexity - O(logn ^ 2) (As we are traversing through all nodes)
+ * Space Complexity - O(n) (As n function calls get's created in worst case)
  */
 
 

@@ -46,7 +46,7 @@ console.log(queue.dequeue())
 console.log(queue.dequeue())
 
 /**
- * Space Compltexity - O(1) (As there are no loops)
+ * Space Compltexity - O(n) (As there are no loops)
  * Time Compltexity - O(1) for push and O(N) for pop 
  */
 

@@ -43,8 +43,8 @@ console.log(maxDepthTree(root1))
 console.log(maxDepthTree(root2))
 
 /**
- * Space Compltexity - O(n) (Doubt)(As we are using recursive stack there may be n stacks created)
- * Time Complexity - O(n) (Recursively as we are checking all the nodes in worst case)
+ * Space Compltexity - O(n) (As we are using recursive stack there may be 1 stack created with n function calls)
+ * Time Complexity - O(logn*logn) (Recursively as we are checking all the nodes in worst case)
  */
 
 
