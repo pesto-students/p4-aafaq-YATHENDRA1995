@@ -16,6 +16,11 @@
 .checkbox {
   width: 18px;
   height: 18px;
+  cursor: pointer;
+}
+
+.toDoName {
+  text-decoration: line-through;
 }
 
 .delIcon {

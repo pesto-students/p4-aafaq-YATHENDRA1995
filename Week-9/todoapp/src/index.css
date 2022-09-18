@@ -5,9 +5,13 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden;
+}
+
 .layout {
   width: 100%;
-  min-height: calc(100vh - 60px);
+  height: calc(100vh - 60px);
   overflow-y: auto;
   padding-top: 32px;
 }
@@ -15,4 +19,23 @@
 .container {
   width: 650px;
   margin: 0 auto;
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 650px) {
+  .container {
+    width: 550px;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 550px) {
+  .container {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .container {
+    width: 350px;
+  }
 }

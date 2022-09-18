@@ -24,8 +24,19 @@
   border-radius: 5px;
 }
 
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .btnText {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  .inputDiv {
+    padding: 16px;
+  }
 }

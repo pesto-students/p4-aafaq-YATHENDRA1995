@@ -1,13 +1,18 @@
 import ToDo from "../toDo/ToDo"
 import classes from './ToDoList.module.css'
 
-const ToDoList = () => {
+const ToDoList = (props) => {
+
+  const { list, del, taskComp } = props
+
   return (
     <>
       <div className={classes.listContainer}>
-        <ToDo />
-        <ToDo />
-        <ToDo />
+        {
+          list.map((item) => {
+            return <ToDo key={item?.id} item={item} del={del} taskComp={taskComp} />
+          })
+        }
       </div>
     </>
   )
