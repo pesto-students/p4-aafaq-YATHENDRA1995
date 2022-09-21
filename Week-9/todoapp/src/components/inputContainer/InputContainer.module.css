@@ -1,0 +1,42 @@
+.inputDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 48px;
+}
+
+.inputEle {
+  width: 100%;
+  min-height: 40px;
+  border-radius: 5px;
+  outline: none;
+  padding: 4px 8px;
+  border: 1px solid grey;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 6px 16px;
+  background: #03C6C7;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btnText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  .inputDiv {
+    padding: 16px;
+  }
+}
