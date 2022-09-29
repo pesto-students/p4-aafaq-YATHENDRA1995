@@ -162,10 +162,44 @@ table {
 }
 
 th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
+  /* border: 1px solid #ddd; */
+  padding: 8px 40px;
+}
+
+th {
+  background: #03C6C7;
 }
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+.originalLink {
+  color: #000;
+  text-decoration: none;
+}
+
+.shortenLink {
+  color: #03C6C7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes rotateAnim {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  display: inline-block;
+  animation: rotateAnim 2s linear infinite;
+}
+  
