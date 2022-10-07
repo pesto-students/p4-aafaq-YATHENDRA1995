@@ -18,14 +18,14 @@ const App = () => {
         name: data,
         isDone: false
       }
-      setList([ ...list, newItem ])
+      setList([...list, newItem])
     }
     setData('')
   }
 
   const deleteItem = (item) => {
     let updatedList = list.filter((data) => data?.id !== item?.id)
-    setList([ ...updatedList ])
+    setList([...updatedList])
   }
 
   const taskCompleted = (e, item) => {
@@ -33,19 +33,20 @@ const App = () => {
     tempList.forEach((data, i) => {
       if (data?.id === item?.id) {
         data.isDone = e.target.checked
-        
+
       }
     })
-    setList([ ...tempList ])
+    setList([...tempList])
   }
 
   return (
     <>
+      <Toaster />
       <Header />
       <div className="layout">
         <div className="container">
           <Title />
-          <InputContainer data={data}  setData={setData} addToDo={addToDo} /> 
+          <InputContainer data={data} setData={setData} addToDo={addToDo} />
           <ToDoList list={list} del={deleteItem} taskComp={taskCompleted} />
         </div>
       </div>
