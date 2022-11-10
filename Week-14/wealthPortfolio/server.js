@@ -14,7 +14,7 @@ app.use('/finance', financeRouter)
 const start = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://yathendra:46Ea6RvUxX3YrHc2@cluster0.pl6nda0.mongodb.net/?retryWrites=true&w=majority"
+      // ADD MONGO url here
     )
     app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
   } catch (err) {
