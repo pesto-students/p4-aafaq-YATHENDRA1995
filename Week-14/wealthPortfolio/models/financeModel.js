@@ -14,13 +14,6 @@ const expenseSchema = new mongoose.Schema({
   month: { type: String },
 }, { timestamps: true })
 
-const savingSchema = new mongoose.Schema({
-  savingType: { type: String },
-  amount: { type: Number },
-  year: { type: Number },
-  month: { type: String },
-}, { timestamps: true })
-
 const financeSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
@@ -29,7 +22,6 @@ const financeSchema = new mongoose.Schema({
   },
   income: [incomeSchema],
   expenditure: [expenseSchema],
-  savings: [savingSchema]
 },
   { timestamps: true },
 );

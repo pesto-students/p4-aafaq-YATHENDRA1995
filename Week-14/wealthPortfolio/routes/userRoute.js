@@ -5,7 +5,7 @@ import users from '../models/userModel';
 const userRouter = express.Router()
 
 userRouter
-  // Get all users
+  // Get all users for temporary purposes to get ids
   .get('/', async (req, res) => {
     const allUsers = await users.find()
     if (allUsers.length > 0) {

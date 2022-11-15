@@ -71,20 +71,24 @@ financeRouter
     }
   })
   // Get finances by year or month
-  // .post('/:id', async (req, res) => {
-  //   const id = req?.params?.id
-  //   const { year, month } = req?.body
-  //   if (id) {
-  //     const allFinanceData = await finances.find({ user: id })
-  //     if (allFinanceData?.length > 0) {
-  //       const reqInfoIncome = allFinanceData?.filter(item => item?.income?.filter(data => data?.year !== year))
-  //       return res.status(200).json({
-  //         financeData: reqInfoIncome
-  //       })
-  //     }
-  //     return res.status(404).json({ message: 'No Data found for current user' })
-  //   }
-  //   return res.status(400).json({ message: 'UnAuthorized' })
-  // })
+  .post('/financeByTime', async (req, res) => {
+    const { user, startDate, endDate } = req?.body
+    if (!user) {
+      return res.status(400).json({ message: 'Please login to get data' })
+    }
+    const allUsers = await users.find()
+    const userIds = allUsers.map(user => user?.id)
+    if (userIds?.includes(user)) {
+      let reqInfo
+      if (startDate && endDate) {
+        reqInfo = await finances.find({ user, createdAt: { $gt: startDate, $lt: endDate } })
+      } else {
+        reqInfo = await finances.find({ user })
+      }
+      return res.status(201).json({ financeData: reqInfo })
+    } else {
+      return res.status(400).json({ message: 'User Not Found' })
+    }
+  })
 
 export { financeRouter }
