@@ -1,0 +1,97 @@
+* {
+  font-family: 'roboto', arial, helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.row1, .row2 {
+  display: flex;
+  width: 100%;
+}
+
+div {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  transition: transform 2s ease-in-out;
+}
+
+.first {
+  background: red;
+}
+
+.second {
+  background: yellow;
+}
+
+.third {
+  background: green;
+}
+
+.fourth {
+  background: blue;
+}
+
+@media only screen and (max-width: 600px) {
+  div {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* @keyframes rotation {
+  from {
+      transform: rotate(-90deg);
+  }
+  to {
+      transform: rotate(0deg);
+  }
+} */
+
+/* .first:hover, .second:hover {
+  animation: rotation 1s ease-in-out;
+} */
+
+/* .first:hover {
+  transform: rotate(-90deg) translateX(300px);
+  transition-duration: 2s;
+}
+
+.second:hover {
+  transform: rotate(-90deg) translateY(300px);
+  transition-duration: 2s;
+}
+
+.third:hover {
+  transform: rotate(-90deg) translateY(-300px);
+  transition-duration: 2s;
+}
+
+.fourth:hover {
+  transform: rotate(-90deg) translateX(-300px);
+  transition-duration: 2s;
+} */
+
+.first:hover {
+  transform: rotate(90deg) translateY(300px);
+}
+
+.second:hover {
+  transform: rotate(-90deg) translateY(300px);
+}
+
+.third:hover {
+  transform: rotate(90deg) translateY(300px);
+}
+
+.fourth:hover {
+  transform: rotate(-90deg) translateY(300px);
+}
